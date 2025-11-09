@@ -1,0 +1,21 @@
+{
+  "name": "yipis",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --env dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./public/main.css --minify"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "@cloudflare/workers-types": "^4.20241018.0",
+    "@tailwindcss/cli": "^4.1.17",
+    "typescript": "^5.5.2",
+    "vitest": "2.0.5",
+    "wrangler": "^4.46.0"
+  }
+}
